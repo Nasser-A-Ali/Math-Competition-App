@@ -9,8 +9,9 @@
             <h1>Math Quiz</h1>
         </header>
         <p>Answer the question below:</p>
-        <p><%= question %></p>
-        <p>Current Streak: </p>
+        <p><%= currentQuestion %></p>
+        <p>Current Streak: <%= currentStreak %></p>
+        <p>Highest Streak: <%= highestStreak %></p>
         <form action="/quiz" method="POST">
             <!-- This handles sending the user's answer back to the server. It's not recommended you modify this, as you shouldn't need to -->
             <label for="answer">Your Answer:</label>

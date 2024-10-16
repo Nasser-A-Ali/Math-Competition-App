@@ -2,6 +2,19 @@
 <%- include('partials/header') %>
     <main class="main-content index_container">
         <h1>Welcome to the Math Competition App</h1>
+
+        <span>
+            <% if (streakState == false) { %>
+                There are no streaks to display yet. Start a quiz to get on the leaderboard!
+            <% } else { %>
+                <% if (currentStreak == highestStreak) { %>
+                    <%= "Your current streak is " + currentStreak + " which is your highest streak." %>
+                <% } else { %>
+                    <%= "Your current streak is " + currentStreak + " and your highest streak is " + highestStreak + "." %>
+                <% } %>
+            <% } %>
+        </span>
+
         <div class="navigation__container">
             <a href="/leaderboards">
                 View Leaderboards
