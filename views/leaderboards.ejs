@@ -2,18 +2,20 @@
 <%- include('partials/header') %>
 
     <!-- Display question or whatever else here -->
-    <h1>Top Streaks</h1>
-    <table>
-        <tr>
-            <th># of Questions Answered Correctly</th>
-            <th>Date</th>
-        </tr>
-        <% for (let i = 0; i < leaderboardEntries.length; i++) { %>
+     <div class="leaderboard-content">
+        <h1>Top Streaks</h1>
+        <table>
             <tr>
-                <td><%= leaderboardEntries[i].streak %></td>
-                <td><%= leaderboardEntries[i].date %></td>
+                <th># of Questions Answered Correctly</th>
+                <th>Date</th>
             </tr>
-        <% } %>
-    </table>
+            <% for (let i = 0; i < leaderboardEntries.length; i++) { %>
+                <tr>
+                    <td><%= leaderboardEntries[i].streak %></td>
+                    <td><%= leaderboardEntries[i].date %></td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
 </body>
 </html>

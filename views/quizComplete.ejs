@@ -2,15 +2,17 @@
 <%- include('partials/header') %>
 
     <!-- Display question or whatever else here -->
-    <h1>You failed!</h1>
-    <p>Current Streak: <%= currentStreak %></p>
-    <p>Highest Streak: <%= highestStreak %></p>
-    <p>You gotta pump those numbers up, those are rookie numbers.</p>
+    <div class="quiz-complete-content">
+        <h1>You failed!</h1>
+        <p>Current Streak: <%= currentStreak %></p>
+        <p>Highest Streak: <%= highestStreak %></p>
+        <p>You gotta pump those numbers up, those are rookie numbers.</p>
 
-    <div>
-        <a href="./quiz">Start a New Quiz</a>
-        <a href="./leaderboards">View Leaderboards</a>
-        <a href="./">Return to Home</a>
+        <div class="quiz-complete-links">
+            <a href="./quiz">Start a New Quiz</a>
+            <a href="./leaderboards">View Leaderboards</a>
+            <a href="./">Return to Home</a>
+        </div>
     </div>
 </body>
 </html>
